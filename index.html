@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <img src="img/little lemon.png" alt="Lemon" class="logo">
+                <div class="slogan">Actions speak louder than words</div>
+            </div>
+            <div class="banner">
+                <span>WELCOME</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form action="#" method="post" name="login-form">
+                <h2>Ðăng ký thông tin người dùng</h2>
+                <div class="form-wrap">
+                    <div class="form-group">
+                        <label for="fullName" class="required">Họ và tên</label>
+                        <input type="text" name="fullName" id="fullName">
+                        <small class="msg-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="required">Email</label>
+                        <input type="email" name="email" id="email">
+                        <small class="msg-error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="required">Phone</label>
+                        <input type="text" name="phone" id="phone">
+                        <small class="msg-error"></small>
+                    </div>
+                </div>
+                
+                <fieldset class="gender">
+                    <legend class="required">Giới tính</legend>
+                    <div class="gender-list">
+                        <label class="gender-item">
+                            <input type="radio" name="gender" value="nam">
+                            Nam
+                        </label>
+                        <label class="gender-item">
+                            <input type="radio" name="gender" value="nữ">
+                            Nữ
+                        </label>
+                        <small class="msg-error"></small>
+                    </div>
+                </fieldset>
+                <fieldset class="hobby">
+                    <legend>Sở thích</legend>
+                    <div class="hobby-list">
+                        <label class="hobby-item">
+                            <input type="checkbox" name="hobby" value="thể thao">
+                            Thể thao
+                        </label>
+                        <label class="hobby-item">
+                            <input type="checkbox" name="hobby" value="phim ảnh">
+                            Phim ảnh
+                        </label>
+                        <label class="hobby-item">
+                            <input type="checkbox" name="hobby" value="đọc sách">
+                            Đọc sách
+                        </label>
+                        <label class="hobby-item">
+                            <input type="checkbox" name="hobby" value="âm nhạc">
+                            Âm nhạc
+                        </label>
+                        <label class="hobby-item">
+                            <input type="checkbox" name="hobby" value="khác">
+                            Khác
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <label for="intro">Giới thiệu bản thân</label>
+                    <textarea name="intro" id="intro" placeholder="Viết gì đó..."></textarea>
+                </div>
+                <button class="btn" type="submit">Đăng ký</button>
+            </form>
+            <div id="result" class="hidden"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <small class="footer_desc">Phạm Quang Minh - voldemort252@gmail.com - T2512E</small>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
